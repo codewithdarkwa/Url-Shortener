@@ -217,9 +217,60 @@ ul :nth-child(1){
 .logo{
   margin-top:4rem;
 }
+
 /* Mobile View */
-/* @media (max-width: 768px){
+@media (max-width: 768px){
   ul li a{
     display:none;
   }
-} */
+  section{
+    display:flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content:center;
+  }
+ .image img{
+   width:100%;
+  }
+  .content{
+    width:100%;
+  }
+  .content h1{
+    font-size:2rem;
+  }
+  .input-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background:url("./images/bg-shorten-mobile.svg");
+    width:90%;
+  }
+  input{
+   font-size:1rem;
+   padding:0.9rem 1.2rem;
+   width:90%;
+  }
+  .input-btn{
+   font-size:1rem;
+   padding:0.9rem 1.2rem;
+   width:90%;
+  }
+  .cards{
+    display:flex;
+    flex-direction:column;
+    align-items: center; 
+    justify-content: space-between;
+  }
+  .boost{
+  background:url("./images/bg-boost-mobile.svg");
+  background-position: center;
+  background-size:cover;
+  }
+  footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+}
