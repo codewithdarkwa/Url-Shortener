@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&family=Roboto:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --cyan: hsl(180, 66%, 49%);
   --dark-violet: hsl(257, 27%, 26%);
@@ -276,7 +278,7 @@ ul :nth-child(1) {
     width: 100%;
   }
   .content h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   .input-container {
