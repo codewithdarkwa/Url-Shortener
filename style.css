@@ -211,12 +211,12 @@ input {
 footer {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   background: var(--very-dark-blue);
 }
 
 .footer-links {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 ul li {
   color: var(--grayish-violet);
@@ -225,6 +225,7 @@ ul li {
 }
 ul :nth-child(1) {
   color: #fff;
+  font-weight: bold;
 }
 .footer-social {
   display: flex;
@@ -232,25 +233,18 @@ ul :nth-child(1) {
 }
 .social-links {
   padding: 0.4rem 0.5rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .logo {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
-/* .result {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: between 1rem;
-} */
 .result .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   background-color: #fff;
-  /* width: 50rem; */
   margin-inline: auto;
 }
 .newUrl-btn {
@@ -274,7 +268,7 @@ ul :nth-child(1) {
   }
   section {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -282,7 +276,8 @@ ul :nth-child(1) {
     width: 100%;
   }
   .content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
   }
   .input-container {
     display: flex;
