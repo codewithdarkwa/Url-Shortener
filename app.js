@@ -7,6 +7,11 @@ const selectElement = (selector) => {
 const form = selectElement("form");
 const input = selectElement("input");
 const result = selectElement(".result");
+const hamburger = selectElement(".hamburger");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();

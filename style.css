@@ -29,7 +29,17 @@ header {
   margin: 1.2rem;
   margin-bottom: 3rem;
 }
-
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 0.3rem auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #000;
+}
 .left {
   display: flex;
 }
@@ -247,6 +257,18 @@ ul :nth-child(1) {
 @media (max-width: 768px) {
   ul li a {
     display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
   header {
     justify-content: space-between;
