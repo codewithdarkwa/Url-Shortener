@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;800&family=Roboto:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,7 @@
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
+  /* 3b3054 */
 }
 body {
   font-size: 18px;
@@ -110,21 +111,12 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("./images/bg-shorten-desktop.svg");
-  background-position: center;
-  background-size: cover;
+  background: var(--dark-violet);
   padding: 1rem 1.5rem;
   position: relative;
   width: min(100%, 40rem);
   border-radius: 0.3rem;
   overflow: hidden;
-}
-.input-container::before {
-  content: "";
-  inset: 0;
-  z-index: -1;
-  position: absolute;
-  background: var(--dark-violet);
 }
 .input-btn {
   padding: 0.5rem 1rem;
@@ -184,20 +176,11 @@ input {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background: url("./images/bg-boost-desktop.svg");
-  background-size: cover;
-  background-position: center;
+  background: var(--dark-violet);
   padding: 1.8rem;
   position: relative;
   gap: 2rem;
   color: #fff;
-}
-.boost::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--dark-violet);
-  z-index: -1;
 }
 
 .boost .btn {
@@ -286,7 +269,7 @@ ul :nth-child(1) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url("./images/bg-shorten-mobile.svg");
+    background: var(--dark-violet);
     width: 90%;
   }
   input {
@@ -307,9 +290,7 @@ ul :nth-child(1) {
     margin: 0.5rem;
   }
   .boost {
-    background: url("./images/bg-boost-mobile.svg");
-    background-position: center;
-    background-size: cover;
+    background: var(--dark-violet);
   }
   footer {
     display: flex;
