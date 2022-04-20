@@ -8,9 +8,11 @@ const form = selectElement("form");
 const input = selectElement("input");
 const result = selectElement(".result");
 const hamburger = selectElement(".hamburger");
+const navMenu = selectElement(".nav-menu");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 });
 
 form.addEventListener("submit", (e) => {
