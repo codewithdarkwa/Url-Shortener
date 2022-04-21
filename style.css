@@ -13,7 +13,6 @@
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
-  /* 3b3054 */
 }
 body {
   font-size: 18px;
@@ -198,7 +197,7 @@ input {
 
 .boost .btn {
   background: cyan;
-  padding: 1rem 2.5rem;
+  padding: 1rem;
   cursor: pointer;
   outline: none;
   border: none;
@@ -273,9 +272,8 @@ ul :nth-child(1) {
   .nav-menu {
     position: fixed;
     width: 100%;
-    left: -100%;
+    left: 100%;
     top: 70px;
-    gap: 0;
     flex-direction: column;
     text-align: center;
     background: var(--dark-violet);
@@ -297,7 +295,14 @@ ul :nth-child(1) {
     color: #fff;
   }
   header {
+    display: flex;
     justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 90%;
+  }
+  .content {
+    margin-top: 5rem;
   }
   section {
     display: flex;
